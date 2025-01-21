@@ -1,0 +1,98 @@
+body {
+  background-color: #0c0712;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 50px;
+}
+.header-container .header {
+  font-weight: bolder;
+  font-size: 6rem;
+}
+.header-container .txt {
+  font-size: 0.7rem;
+  color: #fedbff;
+}
+
+.wave-letter {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  background-color: #d1009d;
+  color: #fff;
+  padding: 10px 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: 300ms ease;
+}
+.btn:hover {
+  background-color: #8e37e6;
+  transform: scale(1.03);
+}
+
+.cats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+  gap: 25px;
+}
+@media (max-width: 992px) {
+  .cats-container {
+    flex-direction: column;
+  }
+}
+.cats-container .cat-card {
+  display: flex;
+  flex-direction: column;
+}
+.cats-container .cat-card .cat-img {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.like-btn {
+  display: flex;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 20px 0;
+}
+.like-btn .fa-heart {
+  color: #fff;
+  font-size: 25px;
+}
+.like-btn .fa-heart:hover {
+  color: #d1009d;
+}
+
+.visible {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
